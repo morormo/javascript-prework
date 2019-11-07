@@ -68,7 +68,16 @@
 	}
 	displayResult(argComputerMove, argPlayerMove);
 }
-document.getElementById('play-rock').addEventListener('click', function(){
+const playElementRock = document.getElementById('play-rock');
+playElementRock.addEventListener('click', function(){playGame(1);});
+
+const playElementPaper = document.getElementById('play-paper');
+playElementPaper.addEventListener('click', function(){playGame(2);});
+
+const playElementScissors = document.getElementById('play-scissors');
+playElementScissors.addEventListener('click', function(){playGame(3);});
+
+/*document.getElementById('play-rock').addEventListener('click', function(){
   playGame(1);
 });
 document.getElementById('play-paper').addEventListener('click', function(){
@@ -76,5 +85,6 @@ document.getElementById('play-paper').addEventListener('click', function(){
 });
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
-});
+});*/
+
 }
